@@ -24,10 +24,10 @@ Example:
 
 ### Documentation from Microsoft about Graph
 
-https://github.com/microsoftgraph/msgraph-training-powershell
-https://github.com/microsoftgraph/msgraph-sdk-powershell
-https://github.com/microsoft/mggraph-intune-samples
-https://developer.microsoft.com/en-us/graph
+* https://github.com/microsoftgraph/msgraph-training-powershell
+* https://github.com/microsoftgraph/msgraph-sdk-powershell
+* https://github.com/microsoft/mggraph-intune-samples
+* https://developer.microsoft.com/en-us/graph
 
 ### Assorted Links about Graph or Graph Scripts
 
