@@ -21,3 +21,15 @@ Example:
 #Requires -Modules Microsoft.Graph.Authentication
 #Requires -Modules Microsoft.Graph.DeviceManagement
 ```
+
+### Documentation from Microsoft about Graph
+
+https://github.com/microsoftgraph/msgraph-training-powershell
+https://github.com/microsoftgraph/msgraph-sdk-powershell
+https://github.com/microsoft/mggraph-intune-samples
+https://developer.microsoft.com/en-us/graph
+
+### Assorted Links about Graph or Graph Scripts
+
+https://o365reports.com/ms-graph-powershell-scripts-microsoft-365-it-pros/
+
