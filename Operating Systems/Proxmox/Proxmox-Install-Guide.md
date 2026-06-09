@@ -11,7 +11,7 @@ This guide is for installing and setting up Proxmox VE for use as a home server.
 1. A PC of some sort. This could be laptop, desktop, whatever! Hardware is so capable from the last 5-6 years, if you have a PC from 2020 or newer, it should be viable. My first home server was a laptop with an Intel i5 8th gen processor with a 512GB SSD.
 1. Keyboard
 1. Wired network connection.
-   1. Wi-Fi is fine for testing out the process of installing Proxmox but is compatible with use for a permanent home server.
+   1. Wi-Fi is not compatible with Proxmox. 
 1. Willingness to learn some new stuff, ask questions and do your own research afterwards.
 
 ### Beneficial
