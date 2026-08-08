@@ -1,0 +1,8 @@
+$filter = @{
+    LogName   = 'Application'
+    Level     = 1, 2
+    StartTime = (Get-Date).AddDays(-1).Date
+    EndTime   = (Get-Date).Date
+}
+
+Get-WinEvent -FilterHashtable $filter -MaxEvents 50
