@@ -4,9 +4,7 @@
 
 There is no real point to this file, I don't even know if I will ever expand on it past this one thing but who knows.
 
-### Okay, the stuff.
-
-#### foreach vs ForEach-Object
+### foreach vs ForEach-Object
 
 So I write standard `foreach` loops in VSCodium quite often like this:
 
