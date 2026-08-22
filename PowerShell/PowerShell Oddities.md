@@ -50,3 +50,26 @@ So what gives? Well, I learnt something new here myself! I'll do my best to expl
 * **Example 2:** In this context `foreach` **IS** an alias of `ForEach-Object` and `ForEach-Object` is primarily designed to have objects piped into it. Then to refer to the item within the loop, you use `$PSItem` or `$_` as seen above.
 * **Example 3:** `ForEach-Object` is primarily designed to have objects piped into it. Then to refer to the item within the loop, you use `$PSItem` or `$_` as seen above.
     * It is uncommon but you *can* use `ForEach-Object` with the -inputObject and -Process parameters like this: `ForEach-Object -InputObject @("a","b","c") -Process { Write-Output $_ }` and to be more confusing, you **CAN'T** write `foreach -InputObject...` at the start of a line. Because it's at the beginning of the statement, PowerShell forces it to be a keyword (which doesn't understand parameters) rather than an alias.
+
+### Approved Verbs for Cmdlets?
+
+If you ever want to get a exhaustive list of Microsoft's approved verbs for cmdlets you can find this by running this:
+
+```powershell
+Get-Verb | Select-Object Verb | Sort-Object Verb
+```
+
+Wait... `ForEach` is not in the output? Even after I just wrote that above `foreach vs ForEach-Object` section talking about the ForEach-Object cmdlet?! Well surely `sort` is in there, we did just run `Sort-Object Verb` after all? NO?! Okay, so there are 4 official cmdlets that don't use approved verbs, you can check this yourself if you like with this command:
+
+`Get-Command -CommandType Cmdlet | Where-Object Verb -notin (Get-Verb).Verb | Select-Object Name`
+
+You will get the below output which are those 4 cheeky non-approved verb using cmdlets.
+
+```text
+Name
+----
+ForEach-Object
+Sort-Object
+Tee-Object
+Where-Object
+```
